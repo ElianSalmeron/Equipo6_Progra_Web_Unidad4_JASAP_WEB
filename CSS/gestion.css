@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(220, 220, 220, 0.800);
+}
+
+.form-con-div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Voces', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.700);
+    background-color: white;
+}
+
+.comp-crud{
+    display: inline-flex;
+    align-items: flex-end;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    padding-left: 3%;
+}
+
+p{
+    font-size: 13px;
+}
+
+h1{
+    padding: 5px 15px;
+    margin-top: -40px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+span{
+    background-color: white;
+}
+
+.iconos section{
+    float: right;
+    font-size: 15px;
+    margin-right: 3%;
+    color: #434746;
+}
+.iconos{
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-bottom: 4%;
+}
+
+.iconos h3{
+    font-size: 13px;
+    color: black;
+}
+
+.iconos img{
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.iconos img:hover{
+    transform: scale(1.3);
+}
+
+.mostrar{
+    margin-top: 60px;
+    padding-top: 50px;
+    padding-left: 7%;
+    padding-right: 5%;
+    overflow-y: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td{
+    width: 15%;
+    border: 3px solid black;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cabt{
+    background-color: #848A89;
+    color: white;
+}
+
+tr{
+    background-color: #C9CBCB;
+}

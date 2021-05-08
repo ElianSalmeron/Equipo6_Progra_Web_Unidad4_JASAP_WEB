@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(220, 220, 220, 0.800);
+}
+
+.div-form{
+    width: 90%;
+    height: 445px;
+    margin: auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-family: 'Voces', cursive;
+    border-bottom: solid 2px black;
+}
+
+.div-form h2{
+    text-align: center;
+    font-size: 22px;
+    color: rgb(244, 67, 54);
+    padding-bottom: 10px;
+    border-bottom: solid 2px black;
+}
+
+.form-register{
+    width: 380px;
+    height: 385px;
+    margin: auto;
+    margin-top: 15px;
+    text-align: right;
+}
+
+.form-register .campos{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+#user-register label{
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+textarea{
+    resize: none;
+    width: 200px;
+    height: 80px;
+    padding: 5px 10px;
+    font-family: 'Voces', cursive;
+    font-size: 14px;
+}
+
+#user-register .confirm, .back{
+    margin-top: 5px;
+    padding: 15px;
+    color: white;
+    width: 100px;
+    border: none;
+    font-weight: bolder;
+    background-color: rgba(51, 51, 51, 0.850);
+}
+
+#user-register .confirm{
+    margin-right: 5px;
+}
+
+#user-register .back:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+#user-register .confirm:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+#user-register p{
+    margin-top: 10px;
+    font-weight: bolder;
+}
