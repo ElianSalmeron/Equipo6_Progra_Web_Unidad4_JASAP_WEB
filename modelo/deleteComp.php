@@ -1,9 +1,6 @@
-<?php
-    $conexion=mysqli_connect('localhost','root','','jasap');
-?>
-
 <?php 
-    
+        include_once("conexion.php");
+
         if(isset($_GET['Buscar'])){
             $busqueda = $_GET['busc'];  
              
@@ -20,18 +17,21 @@
                         <td><?php echo $mostrar['precio']?></td>
                         <td><?php echo $mostrar['descripcion']?></td>
                     </tr>
+
+                    <form id="comp-elim">
+                        <input style="display:none" type="text" name="elim-com" value= <?php echo $mostrar['id_componente'] ?>> 
+                    </form> 
                 <?php    
             }
     }
                 
-    if(isset($_GET['Eliminar'])){
-        $busqueda = $_GET['busc'];
+    if(isset($_GET['Eliminar-Comp'])){
+        $busqueda = $_GET['elim-com'];
         
-        $sql = "delete from componentes where id_componente='".$busqueda."'";
-        $result =mysqli_query($conexion, $sql);
+        $sql = "DELETE from componentes where id_componente='".$busqueda."'";
+        $result = mysqli_query($conexion, $sql);
         if($result!=null)
-   	       print("Componente eliminado con exito ");   
-        
+            echo "<div align='center'> <h3>¡Componente eliminado correctamente!</h3><br> </div>";   
         else
   	        print("No se pudo eliminar");   
     }        

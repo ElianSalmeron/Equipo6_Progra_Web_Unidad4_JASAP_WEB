@@ -1,18 +1,14 @@
-<?php
-    $conexion=mysqli_connect('localhost','root','','jasap');
-?>
+<?php 
+            include_once("conexion.php");
 
- <?php 
             if(isset($_GET['Buscar'])){
             $busqueda = $_GET['id'];  
                 
             $sql="SELECT * from empleados where id_empleado like '%$busqueda'";
-            $result=mysqli_query($conexion,$sql);
+            $result = mysqli_query($conexion,$sql);
         
             if($mostrar=mysqli_fetch_array($result)){   
-                ?>
-             
-            
+?>
             <div class="register-comp">
                 <form id="form-component-register" method="post" action="ActualizarE.php">
                         <input class="campos" type="text" name="idEmp" value="<?php echo $_GET['id']?>" style="display: none">

@@ -1,6 +1,6 @@
 <?php 
-    $conexion = mysqli_connect('localhost','root','','jasap');
-    $sql = "SELECT * FROM proveedores";
+    include_once("conexion.php");
+    $sql = "SELECT * FROM proveedores LIMIT 5";
     $result = mysqli_query($conexion, $sql);
     $numRegistros = $result->num_rows;
 

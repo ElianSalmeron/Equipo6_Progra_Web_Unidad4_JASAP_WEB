@@ -1,16 +1,20 @@
-
 <?php 
+   include_once("conexion.php");
 
-$oMysql = new mysqli("localhost", "root", "", "jasap");
- // $conexion = pg_connect("host=localhost port=5432 user=nombreUsuario password=passwordUsuario dbname=nomBD", PGSQL_CONNECT_FORCE_NEW);
-// $conexion = pg_connect("host=localhost dbname=BASE_DE_DATOS user=USUARIO password=CONTRASEÑA");		
+   $sql = "SELECT MAX(id_empleado) AS id FROM empleados";
+   $result = mysqli_query($conexion, $sql);
+   $numRegistros = $result->num_rows;
 
-$Query= "INSERT INTO empleados VALUES (default,'".$_POST["nombre"]."','".$_POST["direccion"]."','".$_POST["telefono"]."','".$_POST["rfc"]."','".$_POST["correo"]."','".$_POST["usuario"]."','".$_POST["contrasena"]."','".$_POST["categoria"]."')";
-          
-		  //$oMysql->query    seria como Objeto.metodo
-$Result = $oMysql->query( $Query );  // se lanza la consulta
-    
+   if($numRegistros > 0){
+      $empleado = $result->fetch_array();
+      $id_empleado = $empleado['id'] + 1; 
+   }
+   else
+      $id_empleado = 1;
 
-if($Result!=null)
-   header('location: ../agregarEmp.php');
+   $sql = "INSERT INTO empleados VALUES ('".$id_empleado."','".$_POST["nombre"]."','".$_POST["direccion"]."','".$_POST["telefono"]."','".$_POST["rfc"]."','".$_POST["correo"]."','".$_POST["usuario"]."','".$_POST["contrasena"]."','".$_POST["categoria"]."')";
+   $result = mysqli_query($conexion, $sql);
+      
+   if($result!=null)
+      header('location: ../agregarEmp.php');
 ?>

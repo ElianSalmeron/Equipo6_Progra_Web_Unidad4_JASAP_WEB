@@ -1,6 +1,6 @@
 <?php 
-    $conexion = mysqli_connect('localhost','root','','jasap');
-    $sql = "SELECT * FROM empleados";
+    include_once("conexion.php");
+    $sql = "SELECT * FROM empleados LIMIT 5";
     $result = mysqli_query($conexion, $sql);
     $numRegistros = $result->num_rows;
 
@@ -28,7 +28,7 @@
                 <td><?php echo $fila['correo_electronico']?></td>
                 <td><?php echo $fila['rol']?></td>
             </tr>
-            <?php 
+            <?php
                 }
             }?>
         </table>

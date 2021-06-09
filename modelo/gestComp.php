@@ -1,5 +1,5 @@
 <?php 
-    $conexion = mysqli_connect('localhost','root','','jasap');
+    include_once("conexion.php");
     $sql = "SELECT * FROM componentes";
     $result = mysqli_query($conexion, $sql);
     $numRegistros = $result->num_rows;
@@ -24,7 +24,7 @@
                 <td><?php echo $fila['nombre']?></td>
                 <td><?php echo $fila['categoria']?></td>
                 <td><?php echo $fila['existencias']?></td>
-                <td><?php echo $fila['precio']?></td>
+                <td>$<?php echo $fila['precio']?></td>
                 <td><?php echo $fila['descripcion']?></td>
                 </tr>
             <?php 

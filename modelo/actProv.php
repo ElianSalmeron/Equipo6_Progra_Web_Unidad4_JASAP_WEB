@@ -1,23 +1,17 @@
-<?php
-    $conexion=mysqli_connect('localhost','root','','jasap');
-?>
-
- <?php 
-             if(isset($_GET['Buscar'])){
+<?php 
+            include_once("conexion.php");
+            
+            if(isset($_GET['Buscar'])){
             $busqueda = $_GET['id'];  
                 
             $sql="SELECT * from proveedores where id_proveedor like '%$busqueda'";
-            $result=mysqli_query($conexion,$sql);
+            $result = mysqli_query($conexion,$sql);
         
             if($mostrar=mysqli_fetch_array($result)){   
                 ?>
              <div class="register-comp">
                 <form id="form-component-register" method="post" action="actualizarP.php">
-                  
                     <input class="campos" type="text" name="idProv" value="<?php echo $_GET['id']?>" style="display: none">
-                    
-                    
-                    
                     <div>
                         <label id="label1" for="nombre">Nombre: </label>
                         <input class="campos" type="text" name="nombre" size="30" value="<?php echo $mostrar["nombre"]?>">

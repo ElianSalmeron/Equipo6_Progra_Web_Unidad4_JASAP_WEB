@@ -1,16 +1,13 @@
-<?php
-    $conexion=mysqli_connect('localhost','root','','jasap');
-?>
-
 <?php 
-    
-if(isset($_GET['Buscar'])){
+        include_once("conexion.php");
+
+        if(isset($_GET['Buscar'])){
             $busqueda = $_GET['busc'];  
                 
             $sql="SELECT * from empleados where id_empleado like '%$busqueda'";
-            $result=mysqli_query($conexion,$sql);
+            $result = mysqli_query($conexion,$sql);
         
-            if($mostrar=mysqli_fetch_array($result)){   
+            if($mostrar = mysqli_fetch_array($result)){   
                 ?>
                     <tr>
                         <td><?php echo $mostrar['id_empleado']?></td>
