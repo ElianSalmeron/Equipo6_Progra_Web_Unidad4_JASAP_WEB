@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +21,7 @@
     </header>
 
     <nav>
-        <?php include_once("menuAdmin.php") ?>
+        <?php include_once("menu.php") ?>
     </nav>
 
     <div class="consultarcomp">
@@ -50,30 +52,24 @@
                     <label>Buscar componente: </label>
                     <input type="text" name="busc" placeholder=" Buscar" required> 
                     <input type="submit" id="boton" name="Buscar" value="Buscar">
-                    <input type="submit" id="boton2" name="Eliminar"
-                           value="Eliminar">
-                    
-            </form>
+                    <input type="submit" id="boton2" name="Eliminar-Comp" value="Eliminar" form="comp-elim"> 
+                </form>
             </div>
             <div class="mostrarcomp">
-        
-            <table>
-            <tr class="cabt">
-		      <td><strong> id_componente</strong></td>
-		      <td><strong> Nombre</strong></td>
-		      <td><strong> Tipo de componente</strong></td>
-		      <td><strong> Existencias</strong></td>
-		      <td><strong>Precio</strong></td>
-              <td><strong>Descripci&oacute;n</strong></td>
-            </tr>
-            <tr>
-               <?php include_once("modelo/deleteComp.php");
-                ?>
-            </table>
-            
+                <table>
+                    <tr class="cabt">
+                        <td><strong> id_componente</strong></td>
+                        <td><strong> Nombre</strong></td>
+                        <td><strong> Tipo de componente</strong></td>
+                        <td><strong> Existencias</strong></td>
+                        <td><strong>Precio</strong></td>
+                        <td><strong>Descripci&oacute;n</strong></td>
+                    </tr>
+                    <tr>
+                    <?php include_once("modelo/deleteComp.php"); ?> 
+                </table>
             </div>    
     </div>
-
     <footer>
         <?php include_once("footer.html") ?>
     </footer>

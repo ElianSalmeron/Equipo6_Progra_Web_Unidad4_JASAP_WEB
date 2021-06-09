@@ -51,8 +51,8 @@
                         <textarea name="direccion" form="user-register"></textarea>
                     </div>
                     <input class="confirm" type="submit" name="" value="Registrarse"
-                    onclick = "return validaDatosCliente(correo, telefono);">
-                    <input class="back" type="button" name="" value="Cancelar">
+                    onclick = "return validaDatosCliente(correo, telefono, password, 1);">
+                    <input class="back" type="button" name="" value="Cancelar" onclick="location.href='index.php'">
                     <p>*Campos opcionales</p>
                 </form>
             </div>

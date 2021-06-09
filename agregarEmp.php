@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -9,7 +11,7 @@
         <link href="CSS/fontello.css" rel="stylesheet">
         <link href="CSS/AgregarEmp.css?5.0" type="text/css" rel="stylesheet">
         <script type="text/javascript" src="js/crudAdmin.js"></script>
-        <title>Agregar Empleado</title>
+        <title>Agregar Empleados</title>
     </head>
 
     <body>
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-div">
@@ -82,13 +84,13 @@
                         </select>
                     </div>
                 </form>
-            </div>
+            </div> 
             <div id="botones">
                 <input class="button" type="submit" name="Guardar" value="Guardar" form="form-component-register"
                 onclick = "return validaDatosEmp(telefono, rfc, correo, 0);">
                 <input class="button" type="button" name="Cancelar" value="Cancelar" onclick="location.href='gestionEmp.php'">
             </div>
-     </div>    
+        </div>    
         <footer>
             <?php include_once("footer.html") ?>
         </footer>

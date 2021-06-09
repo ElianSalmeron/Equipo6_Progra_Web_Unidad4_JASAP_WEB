@@ -1,11 +1,12 @@
 <?php
-    $conexion=mysqli_connect('localhost','root','','jasap');
+    session_start();
+    include_once("modelo/conexion.php");
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador Consultar componente</title>
+	<title>Consultar Componentes</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="JASAP WEB">
@@ -23,11 +24,11 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
     <div class="consultarcomp">
-        <h1><span>Consultar componentes</span></h1>
+        <h1><span>Consultar Componentes</span></h1>
 
         <div class="iconos">        
             <section>
@@ -56,8 +57,8 @@
                     <label>Buscar componente: </label>
                     <input type="text" name="busc" placeholder=" Buscar" required> 
                     <input type="submit" id="boton" name="Buscar" value="Buscar">
-            </form>
-        </div>
+                </form>
+            </div>
             <div class="mostrarcomp">
         
             <table>
@@ -68,6 +69,7 @@
 		      <td><strong> Existencias</strong></td>
 		      <td><strong>Precio</strong></td>
               <td><strong>Descripci&oacute;n</strong></td>
+              <td><strong>Imagen</strong></td>
             </tr>
                 <?php include_once("modelo/mostrarComp.php"); ?>
             </table>

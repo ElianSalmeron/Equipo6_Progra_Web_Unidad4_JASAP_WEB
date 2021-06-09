@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -8,8 +10,8 @@
         <link href="CSS/estilos.css?5.0" type="text/css" rel="stylesheet">
         <link href="CSS/fontello.css" rel="stylesheet">
         <link href="CSS/AgregarProv.css?5.0" type="text/css" rel="stylesheet">
-        <script type="text/javascript" src="js/crudAdmin.js"></script>
-        <title>Agregar Proveedor</title>
+        <script type="text/javascript" src="js/crudAdmin.js?5.0"></script>
+        <title>Agregar Proveedores</title>
     </head>
 
     <body>
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-div">

@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -9,7 +11,7 @@
         <link href="CSS/estilos.css?5.0" type="text/css" rel="stylesheet">
         <link href="CSS/fontello.css" rel="stylesheet">
         <link href="CSS/consultaProv.css?5.0" type="text/css" rel="stylesheet">
-        <title>Eliminar Proveedor</title>
+        <title>Eliminar Proveedores</title> 
     </head>
 
     <body>
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-elim-div">
@@ -48,30 +50,25 @@
                         <label for="id">Buscar proveedor: </label>
                         <input class="campob" type="text" name="id" size="10" placeholder=" Buscar" required>
                         <input class="button" type="submit" name="Buscar" value="Buscar">
-                        <input class="button" type="submit" name="Eliminar" value="Eliminar">
+                        <input class="button" type="submit" name="Eliminar-Prov" value="Eliminar" form="prov-elim">
                     </form>
                 </div>
 
                 <div class="most-prov">
                     <table>
                         <tr class="cabt">
-                        <td><strong> id_proveedor</strong></td>
-                        <td><strong> Nombre</strong></td>
-                        <td><strong> RFC</strong></td>
-                        <td><strong> Direcci&oacute;n</strong></td>
-                        <td><strong> Tel&eacute;fono</strong></td>
+                            <td><strong> id_proveedor</strong></td>
+                            <td><strong> Nombre</strong></td>
+                            <td><strong> RFC</strong></td>
+                            <td><strong> Direcci&oacute;n</strong></td>
+                            <td><strong> Tel&eacute;fono</strong></td>
                         </tr>
-                        <?php include_once("modelo/deleteProv.php");
-            ?>
-     
-                        </table>
+                        <?php include_once("modelo/deleteProv.php"); ?>
+                    </table>
                 </div>
             </div>
-      
-
         <footer>
             <?php include_once("footer.html") ?>
         </footer>
-        
     </body>
 </html>

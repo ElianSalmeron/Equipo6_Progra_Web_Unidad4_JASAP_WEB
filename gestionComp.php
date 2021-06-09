@@ -1,7 +1,9 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gesti&oacute;n Componentes </title>
+	<title>Gesti&oacute;n Componentes</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="JASAP WEB">
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
     <div class="form-con-div">

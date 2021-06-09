@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -8,8 +10,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous"/>
         <link href="CSS/estilos.css?5.0" type="text/css" rel="stylesheet">
         <link href="CSS/fontello.css" rel="stylesheet">
-        <link href="CSS/Agregar.css?5.0" type="text/css" rel="stylesheet">
-        <title>Actualizar Componente</title>
+        <link href="CSS/Agregar.css?15.0" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="js/crudAdmin.js?15.0"></script>
+        <title>Actualizar Componentes</title>
     </head>
     
     <body>
@@ -19,7 +22,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-act-div">
@@ -49,11 +52,11 @@
                     <input class="button" type="submit" name="Buscar" value="Buscar">
                 </form>
             </div>
-            <?php include_once("modelo/actComp.php");
-            ?>
-            
-        </div>
 
+            <?php 
+                include_once("modelo/actComp.php");
+            ?>
+        </div>
         <footer>
             <?php include_once("footer.html") ?>
         </footer>

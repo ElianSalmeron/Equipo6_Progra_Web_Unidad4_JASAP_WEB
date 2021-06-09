@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -10,7 +12,7 @@
         <link href="CSS/fontello.css" rel="stylesheet">
         <link href="CSS/AgregarEmp.css?5.0" type="text/css" rel="stylesheet">
         <script type="text/javascript" src="js/crudAdmin.js"></script>
-        <title>Actualizar Empleado</title>
+        <title>Actualizar Empleados</title>
     </head>
 
     <body>
@@ -20,7 +22,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-act-div">
@@ -52,9 +54,9 @@
                 </form>
             </div>
             
-            <?php include_once("modelo/actEmp.php");
+            <?php 
+                include_once("modelo/actEmp.php");
             ?>
-           
         </div>
 
         <footer>

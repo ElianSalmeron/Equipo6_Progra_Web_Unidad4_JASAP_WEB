@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -7,9 +9,9 @@
         <meta name="author" content="Elian Salmerón, Eliel Pérez, Israel Serrano">
         <link href="CSS/estilos.css?5.0" type="text/css" rel="stylesheet">
         <link href="CSS/fontello.css" rel="stylesheet">
-        <link href="CSS/Agregar.css?5.0" type="text/css" rel="stylesheet">
+        <link href="CSS/Agregar.css?25.0" type="text/css" rel="stylesheet">
         <script type="text/javascript" src="js/crudAdmin.js?5.0"></script>
-        <title>Agregar Componente</title>
+        <title>Agregar Componentes</title>
     </head>
 
     <body>
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-div">
@@ -43,7 +45,7 @@
                 </div>
             </div>
             <div class="register-comp">
-                <form id="form-component-register" method="post" action="modelo/InsertarComp.php">
+                <form id="form-component-register" method="POST" action="modelo/InsertarComp.php" enctype="multipart/form-data">
                     <div>
                         <label id="label1" for="nombre">Nombre: </label>
                         <input class="campos" type="text" name="nombre" size="30" value="">
@@ -53,6 +55,7 @@
                         <select class="cat" name="categoria">
                             <option>Microprocesador</option>
                             <option>Memoria RAM</option>
+                            <option>Tarjeta de video</option>
                             <option>Torre</option>
                             <option>Monitor</option>
                             <option>Cooler</option>
@@ -69,15 +72,21 @@
                         <input class="campos" type="text" name="precio" size="8" value="" maxlength = "9">
                     </div>
                     <div>
-                        <label for="descripcion">Descripción: </label>
-                        <input class="description" type="text" name="descripcion">
+                        <label for="descripcion" id="label-desc">Descripción: </label>
+                        <textarea name="descripcion"></textarea>
+                        <!-- <input class="description" type="text" name="descripcion"> -->
+                    </div>
+                    <div>
+                        <label for="imagen">Imagen: </label>
+                        <input type="file" name="imagen" accept="image /png, .jpeg, .jpg" required>
                     </div>
                 </form>
             </div> 
+            
             <div id="botones">
                 <input class="button" type="submit" name="" value="Guardar" form="form-component-register"
                 onclick = "return validaDatosComp(existencias, precio, 0);">
-                <input class="button" type="button" name="" value="Cancelar" onclick="location.href='gestionComp.php'">
+                <input class="button" type="button" name="" value="Cancelar" onclick="location.href='gestionComp.php'"> 
             </div>
         </div>
 

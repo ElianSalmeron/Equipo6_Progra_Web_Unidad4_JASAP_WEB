@@ -1,7 +1,8 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Administrador Consultar empleado</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="keywords" content="JASAP WEB">
@@ -19,11 +20,11 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
         <div class="form-con-div">
-            <h1><span>Gesti&oacute;n de empleados</span></h1>
+            <h1><span>Gesti&oacute;n de Empleados</span></h1>
             
             <div class="iconos">        
                 <section>

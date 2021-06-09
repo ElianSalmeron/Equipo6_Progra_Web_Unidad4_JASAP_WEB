@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="es">
     <head>
@@ -19,7 +21,7 @@
         </header>
 
         <nav>
-            <?php include_once("menuAdmin.php") ?>
+            <?php include_once("menu.php") ?>
         </nav>
 
 
@@ -27,19 +29,19 @@
             <h2><span>Consultar Proveedores</span></h2>
             <div class="iconos">        
                 <section>
-                    <a href="eliminarProv.php"><img src="img/Iconos/eliminar.png"></a>
+                    <a href="eliminarProv.php"><img src="Img/Iconos/eliminar.png"></a>
                     <h3>Eliminar</h3>
                 </section> 
                 <section>
-                    <a href="actualizarProv.php"><img src="img/Iconos/actualizar.png"></a>
+                    <a href="actualizarProv.php"><img src="Img/Iconos/actualizar.png"></a>
                     <h3>Actualizar</h3>
                 </section> 
                 <section id="selected">
-                    <a href="consultarProv.php"><img src="img/Iconos/consultar.png"></a>
+                    <a href="consultarProv.php"><img src="Img/Iconos/consultar.png"></a>
                     <h3>Consultar</h3>
                 </section>
                 <section>
-                    <a href="agregarProv.php"><img src="img/Iconos/agregar.png"></a> 
+                    <a href="agregarProv.php"><img src="Img/Iconos/agregar.png"></a> 
                     <h3>Agregar</h3>
                 </section>
                 </div>

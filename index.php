@@ -26,7 +26,7 @@
             <div class="form">
                 <form method="post" action="modelo/login.php">
                     <label for="usuario">Usuario: </label>
-                    <input class="campos" type="text" name="usuario" value="" placeholder="Usuario" required>
+                    <input class="campos" type="text" name="user" value="" placeholder="Usuario" required>
                     <label>Contraseña: </label>
                     <input class="campos" type="password" name="contraseña" value="" placeholder="Contraseña" required>
                     <input class="confirm" type="submit" name="" value="Ingresar">
