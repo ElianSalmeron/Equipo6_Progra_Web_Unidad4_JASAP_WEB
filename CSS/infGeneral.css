@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(220, 220, 220, 0.800);
+}
+
+.form-con-div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Voces', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.700);
+    background-color: white;
+}
+
+p{
+    font-size: 13px;
+}
+
+h2{
+    padding: 5px 15px;
+    margin-top: -40px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+span{
+    background-color: white;
+}
+
+.form-date{
+    padding: 15px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Voces', cursive;
+    font-weight: 1000;
+}
+
+.izquierda{
+    margin-left: 5px;
+}
+
+#iz, #de{
+    border-radius: 0px;
+    font-family: 'Voces', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.700);
+}
+
+.campos{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+}
+
+#genera{
+    margin-top: 15px;
+    padding: 15px;
+    margin-left: 15px;
+    color: white;
+    width: 100px;
+    border: none;
+    font-weight: bolder;
+    background-color: rgba(51, 51, 51, 0.850);
+}
+
+#genera:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+#boton{
+    margin-top: 15px;
+    padding: 15px;
+    margin-right: 7%;
+    color: white;
+    width: 100px;
+    border: none;
+    font-weight: bolder;
+    background-color: rgba(51, 51, 51, 0.850);
+}
+
+#boton:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+.etiquetas{
+    font-family: 'Voces', cursive;
+    font-weight: 1000;
+    margin-left: 7%;
+    margin-top: 10px;
+}
+
+.etiquetas1{
+    font-family: 'Voces', cursive;
+    font-weight: 1000;
+    margin-left: 90px;
+}
+
+/* TABLA 1 - PEDIDOS */
+.most-ped{
+    padding-top: 30px;
+    padding-left: 7%;
+    padding-right: 5%;
+    overflow-y: auto;
+}
+
+/* TABLA 2 - VENTAS REALIZADAS */
+.most-ven{
+    padding-top: 30px;
+    padding-left: 7%;
+    padding-right: 5%;
+    max-width: 75%;
+}
+
+/* TABLA 3 - COMPONENTES VENDIDOS */
+.most-cv{
+    padding-top: 30px;
+    padding-left: 7%;
+    padding-right: 5%;
+    max-width: 45%;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td{
+    width: 15%;
+    border: 3px solid black;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cabt{
+    background-color: #848A89;
+    color: white;
+}
+
+.cabt #imagen{
+    width: 30px;
+    height: 30px;
+}
+
+tr{
+    background-color: #C9CBCB;
+}
+
+.botones{
+    font-weight: 1000;
+    text-align: right;
+}

@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(220, 220, 220, 0.800);
+}
+
+.form-ped-div{
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Voces', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.700);
+    background-color: white;
+}
+
+.comp-crud{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: inline-flex;
+    align-items: end;
+}
+
+.fun{
+    text-align: right;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h2{
+    padding: 5px 15px;
+    margin-top: -40px;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+p{
+    font-size: 13px;
+}
+
+span{
+    background-color: white;
+}
+
+.busqueda{
+    padding-top: 20px;
+    padding-left: 7%;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.campob{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 25px;
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    width: 200px;
+}
+
+.icono{
+    width: 45px;
+    height: 45px;
+}
+
+.icono:hover{
+    transform: scale(1.3);
+}
+
+#selected{
+    opacity: .35;
+}
+#selected img{
+    transform: none;
+}
+
+.most-ped{
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+table td{
+    width: 15%;
+    border: 3px solid black;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.cabt{
+    background-color: #848A89;
+    color: white;
+}
+
+tr{
+    background-color: #C9CBCB;
+}
+
+.form-pag-div{
+    margin-top: 15px;
+    margin-bottom: 35px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 69%;
+    font-family: 'Voces', cursive;
+    border: 2px solid rgba(0, 0, 0, 0.700);
+    background-color: white;
+    display: inline-flex;
+}
+
+.mov{
+    width: 98%;
+}
+
+.formato{
+    display: flex;
+    width: 100%;
+}
+
+.formato1{
+    display: inline-flex;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 80%;
+}
+
+.formato2{
+    margin-left: 10%;
+    margin: auto;
+}
+
+.button{
+    margin-top: 5px;
+    padding: 15px;
+    color: white;
+    width: 100px;
+    border: none;
+    font-weight: bolder;
+    background-color: rgba(51, 51, 51, 0.850);
+}
+
+.button:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+.campo{
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 80%;
+    font-family: 'Voces', cursive;
+}
+
+.etiqueta{
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 80%;
+}
+
+.acomodo{
+    padding-left: 70%;
+}
+
+@media (max-width:872px) {
+    .acomodo{
+        padding-left: 50%;
+    }
+}

@@ -11,7 +11,8 @@ body{
 
 .form-div{
     width: 450px;
-    height: 475px;
+    height: auto;
+    /* height: 475px; */
     margin: auto;
     margin-top: 40px;
     margin-bottom: 40px;
@@ -132,6 +133,15 @@ span{
 
 #label3{
     margin-left: 42px;
+}
+
+textarea{
+    resize: none;
+    width: 243px;
+    height: 90px;
+    padding: 5px 10px;
+    font-family: 'Voces', cursive;
+    font-size: 14px;
 }
 
 #form-component-register select{

@@ -134,9 +134,19 @@ table td{
     padding-bottom: 10px;
 }
 
+table td:nth-child(7) img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
 .cabt{
     background-color: #848A89;
     color: white;
+}
+
+.cabt #imagen{
+    width: 30px;
+    height: 30px;
 }
 
 tr{

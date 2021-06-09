@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Voces&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(220, 220, 220, 0.800);
+}
+
+.div-form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+    font-family: 'Voces', cursive;
+}
+
+.div-form h2{
+    text-align: center;
+    font-size: 22px;
+    color: rgb(244, 67, 54);
+    padding-bottom: 10px;
+}
+
+.div-comp{
+    text-align: center;
+    border-top: solid 2px black;
+    padding-bottom: 10px;
+    border-bottom: solid 2px black;
+}
+
+.etiquetas{
+    margin-top: 40px;
+}
+
+.entradas{
+    margin-top: 15px;
+}
+
+.formato1{
+    text-align: right;
+}
+
+.msg{
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.button{
+    margin-top: 5px;
+    padding: 15px;
+    color: white;
+    width: 100px;
+    border: none;
+    font-weight: bolder;
+    background-color: rgba(51, 51, 51, 0.850);
+}
+
+.button:hover{
+    background-color: rgba(51, 51, 51, 0.650);
+}
+
+.campo{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding: 5px 5px;
+    font-size: 14px;
+    font-family: 'Voces', cursive;
+}
+
+#nombre, #correo{
+    width: 220px;
+}
+
+#usuario{
+    width: 120px;
+}
+
+#tel, #contra{
+    width: 100px;
+}
